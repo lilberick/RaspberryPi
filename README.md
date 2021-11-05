@@ -1,2 +1,3 @@
-# RaspberryPi
-Cosas específicas en la Raspberry Pi
+# [RaspberryPi](https://www.raspberrypi.com/)
+
+![](.img/rpi-dos.png)
