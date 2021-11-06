@@ -15,6 +15,12 @@
 	$ ./LCD35_v
 	```
 
+	* También puedes usar el de este repositorio
+
+		```sh
+		$ cat LCD/LCD_show_v6_1_3.tar.gz-a* > LCD_show_v6_1_3.tar.gz
+		```
+
 2. Modos de uso
 
 	* Para usar la pantalla kedei (No se podrá usar RCA ni HDMI)
