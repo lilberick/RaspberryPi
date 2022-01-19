@@ -6,6 +6,13 @@
 
 1. Conexion
 
+	| Raspberry Pi	| Servo Pan	| Servo Tilt	|
+	|---------------|---------------|---------------|
+	| 5V		| VCC		| VCC		|
+	| GND		| GND		| GND		|
+	| GPIO 17	|		| Signal PWM	|
+	| GPIO 27	| Signal PWM	|		|
+
 	![](.img/conexion.png)
 
 2. `codigo.py`
