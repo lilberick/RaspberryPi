@@ -3,9 +3,10 @@
 ![](.img/pan-tilt-ga.png)
 
 ## Controlarlo con las flechas del teclado
+
 1. Conexion
 
-	![](.img/PanTilt.png)
+	![](.img/conexion.png)
 
 2. `codigo.py`
 
