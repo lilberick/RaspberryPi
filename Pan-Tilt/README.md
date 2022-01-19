@@ -37,20 +37,21 @@
 	if __name__ == '__main__':
 	    while True:
 		Char = screen.getch()
+		movimiento=30
 		if Char == curses.KEY_UP:
-		    t2=t-3
+		    t2=t-movimiento
 		    setServoAngle(tilt, t2)
 		    print ("telescope up: ",t2)
 		if Char==curses.KEY_DOWN:
-		    t2=t+3
+		    t2=t+movimiento
 		    setServoAngle(tilt, t2)
 		    print ("telescope Down: ",t2)
 		if Char==curses.KEY_LEFT:
-		    p2=p+3
+		    p2=p+movimiento
 		    setServoAngle(pan, p2)
 		    print ("telescope Down: ",p2)
 		if Char==curses.KEY_RIGHT:
-		    p2=p-3
+		    p2=p-movimiento
 		    setServoAngle(pan, p2)
 		    print ("telescope Down: ",p2)
 		if Char==ord('x'):
