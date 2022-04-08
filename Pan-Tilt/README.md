@@ -15,12 +15,13 @@
 
 	![](.img/conexion.png)
 
-2. `codigo.py`
+2. `pantilt-teclado.py`
 
 	```py
 	#!/usr/bin/env python
 	from time import sleep
 	import RPi.GPIO as GPIO
+	import os
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setwarnings(False)
 	pan,tilt = 27,17
@@ -49,19 +50,23 @@
 		if Char == curses.KEY_UP:
 		    t2=t-movimiento
 		    setServoAngle(tilt, t2)
-		    print ("telescope up: ",t2)
+		    os.system("clear")
+		    print("telescope Up: ",t2)
 		if Char==curses.KEY_DOWN:
 		    t2=t+movimiento
 		    setServoAngle(tilt, t2)
-		    print ("telescope Down: ",t2)
+		    os.system("clear")
+		    print("telescope Down: ",t2)
 		if Char==curses.KEY_LEFT:
 		    p2=p+movimiento
 		    setServoAngle(pan, p2)
-		    print ("telescope Down: ",p2)
+		    os.system("clear")
+		    print("telescope Left: ",p2)
 		if Char==curses.KEY_RIGHT:
 		    p2=p-movimiento
 		    setServoAngle(pan, p2)
-		    print ("telescope Down: ",p2)
+		    os.system("clear")
+		    print("telescope Right: ",p2)
 		if Char==ord('x'):
 		    print("Program Ended")
 		    break
@@ -74,7 +79,7 @@
 3. Ejecutar
 
 	```
-	$ python3 codigo.py
+	$ python3 pantilt-teclado.py
 	```
 
 	![](.img/agif_640x360.gif)
