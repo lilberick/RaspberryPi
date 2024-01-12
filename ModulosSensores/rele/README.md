@@ -15,6 +15,8 @@
 ## `codigo.py`
 
 ```py
+import RPi.GPIO as GPIO
+import time
 class Rele:
     def __init__(self, pin):
         GPIO.setmode(GPIO.BCM)
